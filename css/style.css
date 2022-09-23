@@ -1,0 +1,136 @@
+/* estilo de la home */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.contenedor{
+    display: grid;
+    height: 100vh;
+
+}
+header{
+    display:flex;
+    flex-direction: table-column;
+    justify-content: space-around;
+    font-size: 5rem;
+    align-items: center;
+}
+
+header h1{
+    font-size: 3rem;
+    color: black;
+    font-family: sans-serif;
+    font-size: 80px;
+    background-color: brown;
+}
+
+header nav ul{
+    display:flex;
+    flex-direction:table-column;
+    font-size: 17px;
+}
+
+.padre{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.hijos{
+    background-color: darkblue;
+    width: 260;
+    margin: 15px;
+}
+
+main{
+    color:blue;
+    font-size: 25px;
+    border: 3px
+}
+
+h2{
+    color:black;
+    text-align: center;
+    
+
+}
+
+h3{
+    color:black;
+    text-align: center;
+
+}
+
+h4 {
+    color:black;
+    text-align: center;
+}
+
+body{
+    background-image: url("../img/wallpaperbetter.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+h5{
+    color:black;
+
+}
+header{
+    font-size: 30px;
+}
+footer{
+    background-color: brown;
+}
+
+
+
+/* estilos servicios */
+
+.contenedor-dos{
+display: grid;
+
+height: 100vh;
+grid-template-areas: 
+"header header"
+"main main"
+"section section"
+"footer footer";
+}
+
+
+
+.header-servicios{
+    background-color: coral;
+    grid-area: header-servicios;
+}
+
+.main-servicios{
+
+    grid-area: main-servicios;
+}
+
+.section-servicios{
+grid-area: section-servicios;
+}
+
+.footer-servicios{
+    background-color: blueviolet;
+    grid-area:footer-servicios;
+}
+
+/* media queries*/
+
+@media (max-width 768px){
+    .encabezado { background-color: rgb(194, 230, 33);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+} 
